@@ -19,15 +19,15 @@ function App() {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-50 text-center p-6">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">Un peu de bienveillance ✨</h1>
+    <main className="min-h-screen flex flex-col items-center justify-center p-4 bg-purple-50">
+      <h1 className="text-3xl font-bold text-purple-800 mb-4">Un peu de bienveillance ✨</h1>
       <button
         onClick={afficherMessage}
-        className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded shadow"
+        className="bg-purple-600 text-white px-6 py-2 rounded-lg shadow hover:bg-purple-700 transition"
       >
         Affiche un message
       </button>
-      <p className="mt-6 text-lg text-gray-700 max-w-xl">{message || "Chaque jour est une nouvelle opportunité."}</p>
+      <p className="mt-6 text-lg text-purple-700">{message || "Chaque jour est une nouvelle opportunité."}</p>
 
       <div className="mt-10" id="donate-button-container">
         <div id="donate-button"></div>
