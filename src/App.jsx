@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';Add commentMore actions
+// src/App.jsxMore actions
+import React, { useState, useEffect } from 'react';
 
 const messages = [
   "Tu es une personne précieuse.",
@@ -53,7 +54,7 @@ function App() {
         Affiche un message
       </button>
 
-      <p className="mt-6 text-lg text-purple-700">
+      <p className="mt-6 text-lg text-gray-700 max-w-xl">
         {message || "Chaque jour est une nouvelle opportunité."}
       </p>
 
