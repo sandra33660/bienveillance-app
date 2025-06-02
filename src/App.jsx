@@ -54,7 +54,7 @@ function App() {
         Affiche un message
       </button>
 
-      <p className="mt-6 text-lg text-gray-700 max-w-xl">
+      <p className="mt-6 text-lg text-purple-700">
         {message || "Chaque jour est une nouvelle opportunité."}
       </p>
 
