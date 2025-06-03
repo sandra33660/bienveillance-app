@@ -1,5 +1,6 @@
 // src/App.jsxMore actionsAdd commentMore actions
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 const messages = [
   "Tu es une personne précieuse.",
@@ -53,12 +54,20 @@ function App() {
       >
         Affiche un message
       </button>
-
-      <p className="mt-6 text-lg text-purple-700">
-
-        {message || "Chaque jour est une nouvelle opportunité."}
-      </p>
-
+{message ? (
+  <motion.p
+    className="mt-6 text-lg text-purple-700"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.5 }}
+  >
+    {message}
+  </motion.p>
+) : (
+  <p className="mt-6 text-lg text-purple-700">
+    Chaque jour est une nouvelle opportunité.
+  </p>
+)}
       <div className="mt-10" id="donate-button-container">
         <div id="donate-button"></div>
       </div>
