@@ -1,3 +1,4 @@
+// src/App.jsxMore actionsAdd commentMore actions
 import React, { useState, useEffect } from 'react';
 
 const messages = [
@@ -54,7 +55,7 @@ function App() {
       </button>
 
       <p className="mt-6 text-lg text-purple-700">
-      <p className="mt-6 text-lg text-gray-700 max-w-xl">
+
         {message || "Chaque jour est une nouvelle opportunité."}
       </p>
 
