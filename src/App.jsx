@@ -44,7 +44,7 @@ function App() {
   }, []);
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center p-4 bg-gradient-to-br from-purple-100 via-indigo-100 to-pink-100">
+    <main className="min-h-screen flex flex-col items-center justify-center p-4 bg-gradient-to-br from-purple-200 via-indigo-200 to-pink-200">
       <h1 className="text-3xl font-bold text-purple-800 mb-4">Un peu de bienveillance ✨</h1>
 
       <button
